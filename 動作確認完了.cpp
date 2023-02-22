@@ -39,7 +39,8 @@ if(fd<0){
         cvtColor(frame, hsv, cv::COLOR_BGR2HSV);
         // inRange ‚É‚æ‚Á‚Ä Hue ‚ª“Á’è‚Ì”ÍˆÍ‚É‚ ‚é—Ìˆæ‚Ì mask ‚ðŽæ“¾‚µ‚Ü‚·B
         Mat mask;//‚±‚Ì”ÍˆÍ‚É‚ ‚éF‚Í•i‚Q‚T‚TjA‚»‚êˆÈŠO‚Í0‚É‚µ‚Ämask‚É•Ô‚·
-        inRange(hsv, cv::Scalar(150, 100, 100), cv::Scalar(180, 255, 255), mask);
+        inRange(hsv, Scalar(0, 70, 50), Scalar(10, 255, 255), mask);
+        inRange(hsv, cv::Scalar(170, 70, 100), cv::Scalar(180, 255, 255), mask);
 
         //====================—ÖŠs‚ð‚Æ‚é===========================================
 
